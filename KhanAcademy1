@@ -1,0 +1,38 @@
+/** Curve:
+shirts (10) ($20) (red)
+shirts (10) ($20) (blue)
+heels (50) ($50) (short)
+heels (50) ($50) (tall)
+shorts (10) ($25) (white)
+pants (10) ($35) (black)
+hats (20) ($15) (brown)
+bodysuits (10) ($25) (brown)
+joggers (20) ($35) (white)
+jeans (10) ($60) (blue)
+sports bras (30) ($30) (blue)
+hoodies (10) ($55) (white)
+sandals (50) ($25) (pink)
+socks (50) ($10) (white)
+sunglasses (10) ($25) (white)
+**/
+
+CREATE TABLE Curve (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, price NUMERIC, description TEXT);
+
+INSERT INTO Curve VALUES (1, "shirts", 10, 20, "red");
+INSERT INTO Curve VALUES (2, "shirts", 10, 20, "blue");
+INSERT INTO Curve VALUES (3, "heels", 50, 50, "short");
+INSERT INTO Curve VALUES (4, "heels", 50, 50, "tall");
+INSERT INTO Curve VALUES (5, "shorts", 10, 35, "black");
+INSERT INTO Curve VALUES (7, "hats", 20, 15, "brown");
+INSERT INTO Curve VALUES (8, "bodysuits", 10, 25, "brown");
+INSERT INTO Curve VALUES (9, "joggers", 20, 35, "white");
+INSERT INTO Curve VALUES (10, "jeans", 10, 60, "blue");
+INSERT INTO Curve VALUES (11, "sports bras", 30, 30, "blue");
+INSERT INTO Curve VALUES (12, "hoodies", 10, 55, "white");
+INSERT INTO Curve VALUES (13, "sandals", 50, 25, "pink");
+INSERT INTO Curve VALUES (14, "socks", 50, 10, "white");
+INSERT INTO Curve VALUES (15, "sunglasses", 10, 25, "white");
+
+SELECT * FROM Curve ORDER BY price;
+SELECT MAX(quantity) FROM Curve;
+
